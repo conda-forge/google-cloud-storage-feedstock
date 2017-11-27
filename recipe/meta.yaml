@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.6.0" %}
 
 package:
   name: google-cloud-storage
@@ -7,10 +7,11 @@ package:
 source:
   fn: google-cloud-storage-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/google-cloud-storage/google-cloud-storage-{{ version }}.tar.gz
-  sha256: 11e709ed37523eb1bb68fed4dd31fb176cd7734be89cbfc5c22f1898562041bd
+  sha256: 939266b7d5c6df6d45a1aee2c47a09313f813e87790335f00c57708b49480054
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -21,10 +22,11 @@ requirements:
 
   run:
     - python
-    - google-cloud-core >=0.24.1,<0.25dev
-    - google-auth >=1.0.0
-    - google-resumable-media ==0.0.2
-    - requests >=2.0.0
+    - google-cloud-core >=0.28.0,<0.29dev
+    - google-api-core >=0.1.1,<0.2.0dev
+    - google-auth >=1.2.0
+    - google-resumable-media >=0.3.1
+    - requests >=2.18.0
 
 test:
   imports:
