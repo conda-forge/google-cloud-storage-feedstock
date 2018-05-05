@@ -14,12 +14,15 @@ Summary: Python Client for Google Cloud Storage
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/google-cloud-storage-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/google-cloud-storage-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/google-cloud-storage-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/google-cloud-storage-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/google-cloud-storage/badges/version.svg)](https://anaconda.org/conda-forge/google-cloud-storage)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/google-cloud-storage/badges/downloads.svg)](https://anaconda.org/conda-forge/google-cloud-storage)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-google--cloud--storage-green.svg)](https://anaconda.org/conda-forge/google-cloud-storage) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/google-cloud-storage.svg)](https://anaconda.org/conda-forge/google-cloud-storage) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/google-cloud-storage.svg)](https://anaconda.org/conda-forge/google-cloud-storage) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/google-cloud-storage.svg)](https://anaconda.org/conda-forge/google-cloud-storage) |
 
 Installing google-cloud-storage
 ===============================
