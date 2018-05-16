@@ -10,15 +10,15 @@ source:
   sha256: 939266b7d5c6df6d45a1aee2c47a09313f813e87790335f00c57708b49480054
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
     - setuptools
-    - requests >=2.0.0
+    - pip
 
   run:
     - python
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - johanneskoester
+    - tswast
