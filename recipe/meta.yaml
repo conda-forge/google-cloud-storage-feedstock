@@ -1,3 +1,4 @@
+
 {% set version = "1.8.0" %}
 
 package:
@@ -6,19 +7,19 @@ package:
 
 source:
   fn: google-cloud-storage-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/g/google-cloud-storage/google-cloud-storage-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/google-cloud-storage/google-cloud-storage-{{ version }}.tar.gz
   sha256: be2c92ba283ba59d97b087cb3a35701f7327fe64a3a2a8ccef1b316114b52f73
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
     - setuptools
-    - requests >=2.0.0
+    - pip
 
   run:
     - python
@@ -46,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - johanneskoester
+    - tswast
