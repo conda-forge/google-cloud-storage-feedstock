@@ -27,6 +27,8 @@ requirements:
     - google-resumable-media >=0.3.1
 
 test:
+  requires:
+    - python 3.6  # work around temporary protobuf issues
   imports:
     - google
     - google.cloud
