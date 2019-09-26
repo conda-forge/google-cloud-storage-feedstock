@@ -1,4 +1,4 @@
-{% set version = "1.19.1" %}
+{% set version = "1.20.0" %}
 
 package:
   name: google-cloud-storage
@@ -7,7 +7,7 @@ package:
 source:
   fn: google-cloud-storage-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/g/google-cloud-storage/google-cloud-storage-{{ version }}.tar.gz
-  sha256: a82b5d60a2ec366a14746f17910dd8348c36a4aeec36da10021307e1951fcc7f
+  sha256: 2e7e2435978bda1c209b70a9a00b8cbc53c3b00d6f09eb2c991ebba857babf24
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - python
     - google-auth >=1.2.0
     - google-cloud-core >=1.0.3,<2.0dev
-    - google-resumable-media >=0.3.1
+    - google-resumable-media >=0.3.1,!=0.4.0,<0.5dev
 
 test:
   requires:
