@@ -10,7 +10,7 @@ source:
   sha256: bafe77ba8099b987bfde61347d3b774451877dc31837e296519a0a0d337015f1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -44,6 +44,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - tswast
     - andreyz4k
+    - johanneskoester
+    - leahecole
+    - tswast
