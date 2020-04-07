@@ -35,10 +35,10 @@ test:
     - python -m pip check
 
 about:
-  home: https://github.com/googleapis/google-cloud-python
+  home: https://github.com/googleapis/python-storage
   summary: Python Client for Google Cloud Storage
   doc_url: https://googleapis.dev/python/storage/latest/index.html
-  dev_url: https://github.com/googleapis/google-cloud-python/tree/master/storage
+  dev_url: https://github.com/googleapis/python-storage
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
