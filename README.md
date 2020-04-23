@@ -1,7 +1,7 @@
 About google-cloud-storage
 ==========================
 
-Home: https://github.com/googleapis/google-cloud-python
+Home: https://github.com/googleapis/python-storage
 
 Package license: Apache-2.0
 
