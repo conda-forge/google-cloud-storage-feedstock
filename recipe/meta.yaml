@@ -23,6 +23,8 @@ requirements:
     - google-resumable-media >=1.0.0,<2.0dev
     - requests >=2.18.0,<3.0.0dev
     - python
+    # Workaround for https://github.com/conda-forge/aiohttp-feedstock/issues/43
+    - yarl <1.6.0,>=1.0
 
 test:
   requires:
