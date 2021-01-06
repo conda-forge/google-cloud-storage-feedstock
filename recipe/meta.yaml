@@ -16,13 +16,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
+    - python >=3.6
     - google-auth >=1.11.0,<2.0dev
     - google-cloud-core >=1.4.1,<2.0dev
-    - google-resumable-media >=1.0.0,<2.0dev
+    - google-resumable-media >=1.2.0,<2.0dev
     - requests >=2.18.0,<3.0.0dev
-    - python
     # Workaround for https://github.com/conda-forge/aiohttp-feedstock/issues/43
     - yarl <1.6.0,>=1.0
 
