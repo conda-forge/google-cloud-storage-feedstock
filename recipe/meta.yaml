@@ -1,4 +1,4 @@
-{% set version = "1.43.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: google-cloud-storage
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/google-cloud-storage/google-cloud-storage-{{ version }}.tar.gz
-  sha256: f3b4f4be5c8a1b5727a8f7136c94d3bacdd4b7bf11f9553f51ae4c1d876529d3
+  sha256: a57a15aead0f9dfbd4381f1bfdbe8bf89818a4bd75bab846cafcefb2db846c47
 
 build:
   noarch: python
@@ -25,7 +25,6 @@ requirements:
     - google-resumable-media >=1.3.0,<3.0dev
     - requests >=2.18.0,<3.0.0dev
     - protobuf
-    - six
 
 test:
   requires:
