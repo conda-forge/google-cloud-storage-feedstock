@@ -24,7 +24,8 @@ requirements:
     - google-cloud-core >=2.3.0,<3.0dev
     - google-resumable-media >=2.3.2
     - requests >=2.18.0,<3.0.0dev
-    - protobuf
+    # protobuf extra
+    - protobuf <5.0.0dev
 
 test:
   requires:
@@ -51,5 +52,4 @@ extra:
     - xylar
     - andreyz4k
     - johanneskoester
-    - leahecole
     - tswast
