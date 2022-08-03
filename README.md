@@ -149,7 +149,6 @@ Feedstock Maintainers
 
 * [@andreyz4k](https://github.com/andreyz4k/)
 * [@johanneskoester](https://github.com/johanneskoester/)
-* [@leahecole](https://github.com/leahecole/)
 * [@tswast](https://github.com/tswast/)
 * [@xylar](https://github.com/xylar/)
 
