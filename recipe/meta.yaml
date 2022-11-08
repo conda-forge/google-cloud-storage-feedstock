@@ -1,3 +1,4 @@
+{% set name = "google-cloud-storage" %}
 {% set version = "2.6.0" %}
 
 package:
@@ -5,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/g/google-cloud-storage/google-cloud-storage-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-storage-{{ version }}.tar.gz
   sha256: 104ca28ae61243b637f2f01455cc8a05e8f15a2a18ced96cb587241cdd3820f5
 
 build:
