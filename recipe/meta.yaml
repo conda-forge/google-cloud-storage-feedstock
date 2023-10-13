@@ -1,5 +1,5 @@
 {% set name = "google-cloud-storage" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 
 package:
   name: google-cloud-storage
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-storage-{{ version }}.tar.gz
-  sha256: 6fbf62659b83c8f3a0a743af0d661d2046c97c3a5bfb587c4662c4bc68de3e31
+  sha256: 57c0bcda2f5e11f008a155d8636d8381d5abab46b58e0cae0e46dd5e595e6b46
 
 build:
   noarch: python
@@ -20,11 +20,12 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - google-auth >=1.25.0,<3.0dev
+    - google-auth >=2.23.3,<3.0dev
     - google-api-core >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
     - google-cloud-core >=2.3.0,<3.0dev
     - google-resumable-media >=2.6.0
     - requests >=2.18.0,<3.0.0dev
+    - google-crc32c >=1.0,<2.0dev
     # protobuf extra
     - protobuf <5.0.0dev
 
