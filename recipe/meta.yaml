@@ -27,7 +27,7 @@ requirements:
     - requests >=2.18.0,<3.0.0dev
     - google-crc32c >=1.0,<2.0dev
     # protobuf extra
-    - protobuf <5.0.0dev
+    - protobuf <6.0.0dev
 
 test:
   requires:
