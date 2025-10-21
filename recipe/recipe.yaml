@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: "3.4.1"
+  python_check_max: "3.14"
+
+package:
+  name: google-cloud-storage
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/g/google-cloud-storage/google_cloud_storage-${{ version }}.tar.gz
+  sha256: 6f041a297e23a4b485fad8c305a7a6e6831855c208bcbe74d00332a909f82268
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --no-build-isolation
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    # dependencies
+    - google-api-core >=2.15.0,<3.0.0
+    - google-auth >=2.26.1,<3.0.0
+    - google-cloud-core >=2.4.2,<3.0.0
+    - google-crc32c >=1.1.3,<2.0.0
+    - google-resumable-media >=2.7.2,<3.0.0
+    - requests >=2.22.0,<3.0.0
+    # protobuf extra
+    - protobuf >=3.20.2,<7.0.0
+    # for python 3.14
+    - legacy-cgi
+
+tests:
+  - python:
+      imports:
+        - google
+        - google.cloud
+        - google.cloud.storage
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - ${{ python_check_max }}.*
+
+about:
+  summary: Python Client for Google Cloud Storage
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://github.com/googleapis/python-storage
+  repository: https://github.com/googleapis/python-storage
+  documentation: https://googleapis.dev/python/storage/latest/index.html
+
+extra:
+  recipe-maintainers:
+    - xylar
+    - andreyz4k
+    - johanneskoester
+    - tswast
