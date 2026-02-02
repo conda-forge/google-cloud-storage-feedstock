@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.8.0"
+  version: "3.9.0"
   python_check_max: '3.14'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/google-cloud-storage/google_cloud_storage-${{ version }}.tar.gz
-  sha256: cc67952dce84ebc9d44970e24647a58260630b7b64d72360cedaf422d6727f28
+  sha256: f2d8ca7db2f652be757e92573b2196e10fbc09649b5c016f8b422ad593c641cc
 
 build:
   number: 0
