@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.10.1"
+  version: "3.11.0"
   python_check_max: '3.14'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/google-cloud-storage/google_cloud_storage-${{ version }}.tar.gz
-  sha256: 97db9aa4460727982040edd2bd13ff3d5e2260b5331ad22895802da1fc2a5286
+  sha256: 498bf37c999028f69a245f586b5e50d89f59df1fafc0e3a93783ac56be2a456b
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - google-api-core >=2.27.0,<3.0.0
     - google-auth >=2.26.1,<3.0.0
     - google-cloud-core >=2.4.2,<3.0.0
-    - google-crc32c >=1.1.3,<2.0.0
+    - google-crc32c >=1.6.0,<2.0.0
     - google-resumable-media >=2.7.2,<3.0.0
     - requests >=2.22.0,<3.0.0
     # protobuf extra
@@ -51,9 +51,9 @@ about:
   summary: Python Client for Google Cloud Storage
   license: Apache-2.0
   license_file: LICENSE
-  homepage: https://github.com/googleapis/python-storage
-  repository: https://github.com/googleapis/python-storage
-  documentation: https://googleapis.dev/python/storage/latest/index.html
+  homepage: https://github.com/googleapis/google-cloud-python/blob/main/packages/google-cloud-storage
+  repository: https://github.com/googleapis/google-cloud-python/blob/main/packages/google-cloud-storage
+  documentation: https://docs.cloud.google.com/python/docs/reference/storage/latest
 
 extra:
   recipe-maintainers:
