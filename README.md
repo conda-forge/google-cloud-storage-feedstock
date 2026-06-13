@@ -3,15 +3,15 @@ About google-cloud-storage-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-storage-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/googleapis/python-storage
+Home: https://github.com/googleapis/google-cloud-python/blob/main/packages/google-cloud-storage
 
 Package license: Apache-2.0
 
 Summary: Python Client for Google Cloud Storage
 
-Development: https://github.com/googleapis/python-storage
+Development: https://github.com/googleapis/google-cloud-python/blob/main/packages/google-cloud-storage
 
-Documentation: https://googleapis.dev/python/storage/latest/index.html
+Documentation: https://docs.cloud.google.com/python/docs/reference/storage/latest
 
 Current build status
 ====================
