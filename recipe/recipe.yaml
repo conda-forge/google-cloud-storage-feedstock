@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-storage
-  version: "3.12.0"
+  version: "3.12.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/google-cloud-storage/google_cloud_storage-${{ version }}.tar.gz
-  sha256: 03ae9847c6babb368f35f054126b8a08cbc0e3266efb990eb17b9926a45cf3be
+  sha256: 1d81491c7663bc26c5056d00b834356f2253b910ef467f9cf9928a87fca1e04b
 
 build:
   number: 0
@@ -31,6 +31,7 @@ requirements:
     - google-resumable-media >=2.7.2,<3.0.0
     - requests >=2.22.0,<3.0.0
     - google-crc32c >=1.6.0,<2.0.0
+    # from grpc, protobuf extras
     - protobuf >=3.20.2,<7.0.0
 
 tests:
