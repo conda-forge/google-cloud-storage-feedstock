@@ -31,8 +31,15 @@ requirements:
     - google-resumable-media >=2.7.2,<3.0.0
     - requests >=2.22.0,<3.0.0
     - google-crc32c >=1.6.0,<2.0.0
-    # from grpc, protobuf extras
-    - protobuf >=3.20.2,<7.0.0
+    # from the grpc extra
+    - google-api-core-grpc
+    # more restrictive constraint for python >=3.14
+    - grpcio >=1.75.1,<2.0.0
+    # more restrictive constraint for python >=3.14
+    - grpcio-status >=1.75.1,<2.0.0
+    - proto-plus >=1.26.1,<2.0.0
+    - protobuf >=6.33.5,<8.0.0
+    - grpc-google-iam-v1 >=0.14.2,<1.0.0
 
 tests:
   - python:
