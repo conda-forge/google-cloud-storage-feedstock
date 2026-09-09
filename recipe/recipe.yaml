@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-storage
-  version: "3.13.1"
+  version: "3.14.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/google-cloud-storage/google_cloud_storage-${{ version }}.tar.gz
-  sha256: a80bf8cac2794808aa61c50c5f769ecbbe2d10331bacd0d69d30e59b14b346b2
+  sha256: b24e74b493c60b19b83462933a83bb831e45b6ca4924b0d75eac8e176b58b3a7
 
 build:
   number: 0
@@ -20,8 +20,8 @@ build:
 
 requirements:
   host:
-    - pip
     - python ${{ python_min }}.*
+    - pip
     - setuptools
   run:
     - python >=${{ python_min }}
@@ -33,9 +33,9 @@ requirements:
     - google-crc32c >=1.6.0,<2.0.0
     # from the grpc extra
     - google-api-core-grpc >=2.27.0,<3.0.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio >=1.75.1,<2.0.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio-status >=1.75.1,<2.0.0
     - proto-plus >=1.26.1,<2.0.0
     - protobuf >=6.33.5,<8.0.0
