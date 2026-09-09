@@ -20,8 +20,8 @@ build:
 
 requirements:
   host:
-    - pip
     - python ${{ python_min }}.*
+    - pip
     - setuptools
   run:
     - python >=${{ python_min }}
@@ -33,9 +33,9 @@ requirements:
     - google-crc32c >=1.6.0,<2.0.0
     # from the grpc extra
     - google-api-core-grpc >=2.27.0,<3.0.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio >=1.75.1,<2.0.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio-status >=1.75.1,<2.0.0
     - proto-plus >=1.26.1,<2.0.0
     - protobuf >=6.33.5,<8.0.0
